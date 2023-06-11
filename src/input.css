@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Fjalla+One&family=Geologica:wght@300&family=Philosopher&family=Poller+One&family=Shadows+Into+Light&display=swap');
+
+@layer base{
+    .textShadows{
+        text-shadow: rgb(255, 255, 255) 0 0 5px;
+    }
+    .newPhilo{
+        font-family: 'Philosopher', 'sans-serif';
+    }
+
+}
