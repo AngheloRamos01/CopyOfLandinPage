@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body >
+    <header>
+       <nav class=" top-0 w-full flex py-4 px-10 ">
+            <a href="#" class="text-[24px] md:-ml-[10px] lg:ml-[90px]  font-semibold text-slate-900">Anghelo<span class="text-green-600">Ramos</span></a>
+            <div class=" flex flex-col md:flex m-auto gap-20 ">
+                <div class="md:flex  mt-[20px] hidden gap-1 md:items-center -ml-[100px]" id="nav-menu">
+                    <ul class="flex flex-col md:flex-row md:py-0 py-4 gap-3 items-start md:items-center md:gap-4 font-sans ">
+                        <li class=" lg:text-[25px] text-slate-800 text-base font-medium hover:underline underline-offset-4 hover:duration-300">
+                        <a href="#">Home</a>
+                        </li>
+                        <li class="lg:text-[25px] text-slate-800 text-base font-medium hover:underline underline-offset-4 hover:duration-300">
+                        <a href="#">Services</a>
+                        </li>
+                        <li class="lg:text-[25px] text-slate-800 text-base font-medium hover:underline underline-offset-4 hover:duration-300">
+                        <a href="#">How We Work?</a>
+                        </li>
+                        <li class="lg:text-[25px] text-slate-800 text-base font-medium hover:underline underline-offset-4  hover:duration-300">
+                        <a href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+          <div class="md:flex hidden gap-1 items-center justify-end">
+            <button class="bg-[#1B424C] py-1 px-[10px] rounded-full text-slate-200">Contact Us</button>
+          </div>
+          <!--Toggle Menu-->
+          <div class="md:hidden block  ml-auto">
+            <button id="btn-collapse" onclick="toggleMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-slate-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <!--Main-->
+
+      <main>
+        <!--First Section-->
+        <section>
+            <div class="relative grid grid-cols-1 justify-items-center text-[16px] pt-[13%] md:flex md:pt-[8%] md:items-center md:justify-center ">
+                <div class="text-center md:text-left sm:pl-4">
+                    <h2 class="mt-[100px] font-bold sm:textShadows text-[20px] leading-[20px] md:text-[40px] md:leading-[60px] lg:text-[55px] lg:leading-[60px] md:text-[#1B424C]">Quick and Easy <br> Loans for Your <br> Financial Needs.</h2>
+                    <p class="text-slate-800 pt-3 sm:textShadows font-medium">Our loan services offer a hassle-free and streamlined borrowing <br>
+                    experience, providing you with the funds you need in a timely <br>
+                    manner to meet your financial requirements</p>
+                    <button class="border border-[#1B424C] text-[#1B424C] font-bold md:font-normal my-[20px] px-[10px] rounded-full mt-2">
+                        Get stared
+                    </button>
+                </div>
+                
+                <div class="absolute top-[100px] z-[-1] md:static opacity-[.65] md:opacity-100">
+                    <img src="./assets/hero-image.png" alt="hero img">
+                </div>
+            </div>
+        </section>
+            
+        <!--Second Section-->
+        <section>
+            <div class="bg-gradient-to-r from-green-50 text-center ">
+                <div class="py-5 text-[14px] md:text-[25px] lg:text-[30px] font-bold text-[#1B424C] font-philosopher">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid md:grid-cols-1 lg:grid lg:grid-cols-3 md:justify-items-center md:items-center md:justify-center gap-4 justify-center content-center mx-[100px] font-sans ">
+                    <div class="bg-slate-50 md:px-[50px] md:py-[50px] rounded-[30px] border border-slate-300 hover:scale-[1.25]">
+                        <div class="flex items-center justify-center">
+                            <img class="justify-center" src="./assets/icon1.svg" alt="Business Loan Img">   
+                        </div>
+                        <div class="text-[14px] md:text-[25px]">
+                            <h2>Personal loan</h2>
+                        </div>
+                        <div class="text-[16px] md:text-[18px] text-slate-500">
+                            <p>Personal loans provide <br>
+                                borrowers from flexibility in how they<br>
+                                use their funds.
+                            </p>
+                        </div>
+                        <button class="border border-[#1B424C] rounded-full text-[#1B424C] py-1 px-[10px] font-medium hover:bg-[#1B424C] hover:text-white">
+                            Apply now
+                        </button>
+                    </div>
+                    <div class="bg-slate-50 md:px-[50px] md:py-[50px] rounded-[30px] border border-slate-300 hover:scale-[1.25]">
+                        <div class="flex items-center justify-center"> 
+                            <img class="justify-center" src="./assets/icon2.svg" alt="Business Loan Img">
+                        </div>
+                        <div class="text-[14px] md:text-[25px]">
+                            <h2>Business loan</h2>
+                        </div>
+                        <div class="text-[16px] md:text-[18px] text-slate-500">
+                            <p>Business Loans Services provide <br>
+                                financial assistance to businesses<br>
+                                for various purposes.
+                            </p>
+                        </div>
+                        <button class="border border-[#1B424C] rounded-full text-[#1B424C] py-1 px-[10px] font-medium hover:bg-[#1B424C] hover:text-white">
+                            Apply now
+                        </button>
+                    </div>
+                    <div class="bg-slate-50 md:px-[50px] md:py-[50px] rounded-[30px] border border-slate-300 hover:scale-[1.25]">
+                        <div class="flex justify-center"> 
+                            <img  src="./assets/icon3.svg" alt="Business Loan Img">
+                        </div>
+                        <div class="text-[14px] md:text-[25px]">
+                            <h2>Auto loan</h2>
+                        </div>
+                        <div class="text-[16px] md:text-[18px] text-slate-500">
+                            <p>Auto Loans Services provide <br>
+                                financing options for individuals<br>
+                                businesses to purchase a vehicle.
+                            </p>
+                        </div>
+                        <button class="border border-[#1B424C] rounded-full text-[#1B424C] py-1 px-[10px] font-medium hover:bg-[#1B424C] hover:text-white">
+                            Apply now
+                        </button>
+                    </div>
+                </div>
+                <button class="bg-[#1B424C] mb-[30px] my-[20px] px-[30px] py-1 md:py-2 md:px-[40px] rounded-full hover:scale-[1.25] text-slate-200 ">View more</button>
+            </div>
+        </section>
+
+        <!--Third Section-->
+        <section>
+            <div class="items-center justify-center text-center pt-[50px]">
+                <h2 class="text-[32px] font-bold font-philosopher">How we works ?</h2>
+                <p class="font-serif">This is a process, how you can get loan for your self.</p>
+            </div>
+               <!--First Content--> 
+            <div class=" grid md:grid-cols-1 lg:grid-cols-2 items-center justify-center content-center pb-[100px]">  
+                <div class="flex items-center justify-center">
+                    <img src="./assets/application.png" alt="Application Picture">
+                </div>
+                <div class="relative px-[30px] md:flex md:flex-col items-center lg:items-start">
+                    <span class="static lg:absolute text-[70px] -top-8 -left-[25px] font-bold z-[-1] text-slate-300">01</span>
+                    <h2 class="text-[20px] md:text-[30px] font-bold font-philosopher text-[#1B424C]">Application</h2>
+                    <p class="pt-3">The borrower submits a loan application to the bank, either in <br>
+                        person, online, or through other channels. The application <br>
+                        includes personal and financial information, such as income, <br>
+                        employment history, credit score, and the purpose of the <br>loan.</p>
+                </div>
+                <!--Second Content-->
+                
+                <div class="relative px-[30px] md:flex md:flex-col items-center lg:items-start ">
+                    <span class="static lg:absolute lg:left-[70px] text-[70px] -top-8 -left-[50px] font-bold z-[-1] text-slate-300">02</span>
+                    <div class="lg:pl-[80px]">
+                        <h2 class="text-[20px] md:text-[30px] font-bold font-philosopher text-[#1B424C]">Documentation and Verification</h2>
+                        <p class="pt-3">The bank requests supporting documents from the borrower, <br>
+                        such as identification proof, income statements, bank <br>
+                        statements, and collateral details (if applicable). The bank <br>
+                        verifies  the information provided to assess the borrower's <br> creditworthiness and eligibility for the loan.</p>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="./assets/verification.png" alt="Application Picture">
+                </div>
+                <!--Third Content-->
+                <div class="flex items-center justify-center">
+                    <img src="./assets/card.png" alt="Application Picture">
+                </div>
+                <div class="relative px-[30px] md:flex md:flex-col items-center lg:items-start">
+                    <span class="static lg:absolute text-[70px] -top-8 -left-[25px] font-bold z-[-1] text-slate-300">03</span>
+                    <div >
+                        <h2 class="text-[20px] md:text-[30px] font-bold font-philosopher text-[#1B424C]">Credit Assessment</h2>
+                        <p class="pt-3">The bank cinducts a credit assessment to evaluate the <br>
+                        borrower's creditworthiness and ability to repay the loan. This<br>
+                        process involves analyzing the borrower's credit history, <br>
+                        income stability, debt-to-income ratio, and other factors.</p>
+                    </div>
+                    
+                </div>
+                <!--Fourth Content-->
+                <div class="relative px-[30px] md:flex md:flex-col items-center lg:items-start ">
+                    <span class="static lg:absolute lg:left-[70px] text-[70px] -top-8 -left-[50px] font-bold z-[-1] text-slate-300">04</span>
+                    <div class="lg:pl-[90px]">
+                        <h2 class="text-[20px] md:text-[30px] font-bold font-philosopher text-[#1B424C]">Loan Approval</h2>
+                        <p class="pt-3">If the borrower meets the bank;s lendin criteria and passes <br> the credit assessment, the loan is approved. The bank <br>determines the loan ammount, interest rate, repayment term, <br> and any associated fees.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="./assets/approval.png" alt="Application Picture">
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <!--Fourth Section-->
+        <section>
+            <div class="bg-gradient-to-r from-green-50 pb-[100px]">
+                <div class="flex flex-col justify-center content-center items-center md:mx-[100px] md:flex md:flex-col lg:grid lg:grid-cols-2 md:justify-center gap-4 md:items-center  ">
+                    <div >
+                        <div class="pt-[50px] font-bold text-[30px] md:text-[50px] text-[#1B424C] font-sans">
+                            <h2>About us</h2>
+                        </div>
+                        <div>
+                            <img src="./assets/about-us.png" alt="About Us Image">
+                        </div>
+                        <div>
+                            <p class="text-[16px] md:text-[20px] pt-[30px]">
+                                QuickFunds- Your trusted financial partner for <br>
+                                loans. Quick approvals, competitive rates, and <br> personalized solutions to meet your unique <br> needs. Empowering you to achieve your financial <br> goals. Apply online today!
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" bg-white w-full h-auto md:px-[50px] md:py-[50px] rounded-[30px]">
+                        <form >
+                            <div class=" mb-6 md:items-center md:content-center lg:content-center lg:justify-center " >
+                                <div>
+                                    <div class="mt-5">
+                                        <span>Your Name</span>
+                                        <input
+                                        type="text"
+                                        class=" block min-h-[auto] w-full border border-[#1B424C] rounded-full bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        />
+                                    </div>
+                                    <div class="mt-5">
+                                        <span>Phone number</span>
+                                        <input
+                                        type="text"
+                                        class="  block min-h-[auto] w-full border border-[#1B424C] rounded-full bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        />
+                                    </div>
+                                   
+                                    <div class="mt-5">
+                                        <span>Email address</span>
+                                        <input
+                                        type="text"
+                                        class="  block min-h-[auto] w-full border border-[#1B424C] rounded-full bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-center pt-[30px]">
+                                    <button class="bg-[#1B424C] py-[10px] px-[30px] rounded-full text-white">SEND</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+             </div>
+        </section>
+      </main>
+
+      <!--Footer-->
+      <footer>
+        <div >
+            <img src="https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Bg footer"
+            class="bg-cover absolute z-[-1] h-[125%] md:h-full w-[125%] lg:h-[120%] lg:md-[50%]">
+            <div class="relative flex flex-col gap-10 items-center md:flex md:justify-evenly lg:grid lg:grid-cols-3 lg:mx-[150px]">
+                <div class="leading-6  mt-[100px]">
+                   <p class="text-2xl font-semibold text-slate-900"><span class="text-white">Your</span><span class="text-green-600">Name</span></p>
+                   <p class="text-slate-200 ">Our mission is to empower individuals and <br>businesses by providing them with the <br>financial resources they <br>need to acheive their goals.</p>
+                   <div class="flex gap-5 mt-4">
+                    <div class="flex items-center justify-center bg-white  h-[30px] w-[30px] border rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center justify-center bg-white  h-[30px] w-[30px] border rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center justify-center bg-white  h-[30px] w-[30px] border rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </div>
+                   
+                        <div class="flex items-center justify-center bg-white  h-[30px] w-[30px] border rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>  
+                        </div>
+                   </div>
+                </div>
+            <!--Our Services Footer-->
+                <div class="lg:mt-[100px] lg:ml-[100px] ">
+                    <div>
+                        <div class="text-slate-200 ">
+                            <h2 class="uppercase text-[20px] font-sans font-medium md:text-[25px]">Our Services</h2>
+                            <ul class="text-[16px] md:text-[18px]">
+                                <li><a href="#">Personal loan</a></li>
+                                <li><a href="#">Business loan</a></li>
+                                <li><a href="#">Education Loan</a></li>
+                                <li><a href="#">Auto loan</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <!--Contact us Footer-->
+                <div class="text-slate-200 font-serif  lg:mt-[100px] ">
+                    <h2 class="uppercase text-[20px] md:text-[25px] font-sans font-medium">Contact us</h2>
+                    <ul class="text-[16px] md:text-[18px]"> 
+                        <li class="flex items-center mt-3 gap-3 ">
+                            <div class="bg-white border rounded-full h-[35px] w-[35px] flex items-center justify-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+                            </div>
+                            <a href="#">+631234562444</a>
+                        </li>
+                        <li class="flex items-center mt-3 gap-3">
+                            <div class="bg-white border rounded-full h-[35px] w-[35px] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                            </div>
+                        <a href="#">xyzfh5@gmail.com</a></li>
+                        <li class="flex mt-3 gap-3 ">
+                            <div class="bg-white border rounded-full h-[35px] w-[35px] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                </svg>
+                            </div>
+                            <a href="#"><p>123 Maawawan Street <br>
+                                                Diak Mbirukan <br>
+                                                Awan Nga talaga, <br>
+                                                Yes City, 2147 
+                                        </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+      </footer>
+
+      <script src="./main.js"></script>
+</body>
+</html>
